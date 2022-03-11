@@ -121,7 +121,7 @@ const Resume = () => {
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2013
+          Present
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -129,27 +129,24 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            web design
+            Solana Blockchain Developer
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Mile High Ape Club - Discord
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Engineered NFT creation, raffle and staking DAPPs. 
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2014
+          2016-Present
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -157,27 +154,24 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            html & css
+            Cyber Operator
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Air Force -  San Antonio TX
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            I could tell you, but I would have to kill you! 
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2015
+          2018
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -185,20 +179,17 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Fullstack Javascript
+            Lead Software Developer
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Air Force WTIL, San Antonio TX
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Led a 4-person team that delivered enterprise-level Python applications.
           </Typography>
         </Box>
         <Typography
@@ -213,20 +204,18 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Django & React
+          Fullstack Developer
+
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Coding Dojo
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Black belt in Python, JavaScript, and Java
           </Typography>
         </Box>
       </Box>

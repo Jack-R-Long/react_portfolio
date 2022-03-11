@@ -10,7 +10,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import project1 from "../images/html-css-javascript-lg.jpg";
+import project1 from "../images/ape.png";
 import project2 from "../images/html-css-javascript.jpg";
 import project3 from "../images/javascript-fullstack.jpg";
 import project4 from "../images/mern-stack.jpg";
@@ -30,27 +30,23 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
+    name: "Mile High Ape Club",
+    description: `Solana NFT collection. Generated 6,200 NFTs that now have a \
+    floor of 3.2 sol.  Developed a Mile High Ape Club raffle and staking DApps.\
+    Backend contracts written in Rust using the Anchor framework.`,
     image: project1,
   },
   {
-    name: "Project 2",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "NFT Grab",
+    description: `UI tool that lists NFT metadata.  Built around Metaplex \
+    wallet adapter.  Integrates with Phantom, Torus, Ledger etc.  Solana API  \
+    and Axios to query and list NFTs from the blockchain.  Built on Create-\
+    React-App Typescript template.`,
     image: project2,
   },
   {
-    name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "Evo NFT Launch Pad",
+    description: `In the works`,
     image: project3,
   },
   {
@@ -104,14 +100,6 @@ const Portfolio = () => {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Live Demo
-                </Button>
-              </CardActions>
             </Card>
           </Grid>
         ))}

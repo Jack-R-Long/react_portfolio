@@ -42,13 +42,12 @@ const Header = () => {
       <Typography className={classes.title} variant="h4">
         <Typed strings={["Jack Long"]} typeSpeed={40} />
       </Typography>
-
       <Typography className={classes.subtitle} variant="h5">
         <Typed
           strings={[
-            "Frontend Developer",
-            "Backend Developer",
-            "Native App Developer",
+            "App Developer",
+            "Space Nerd",
+            "Block Chain Developer",
           ]}
           typeSpeed={40}
           backSpeed={50}
