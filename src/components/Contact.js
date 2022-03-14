@@ -4,9 +4,9 @@ import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-
-import Send from "@material-ui/icons/Send";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
+import { Link } from "@material-ui/core";
+import { GitHub, Twitter, LinkedIn } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
@@ -36,7 +36,17 @@ const useStyles = makeStyles((theme) => ({
   field: {
     margin: "1rem 0rem",
   },
+  root: {
+    "& .MuiSvgIcon-root": {
+      fill: "tan",
+      "&:hover": {
+        fill: "tomato",
+        fontSize: "3rem",
+      },
+    },
+  },
 }));
+
 
 const InputField = withStyles({
   root: {
@@ -65,54 +75,39 @@ const Contact = () => {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.contactContainer}>
-      <Grid container justify="center">
-        <Box component="form" className={classes.form}>
-          <Typography variant="h5" className={classes.heading}>
-            Contact
-          </Typography>
-          <div class="badge-base LI-profile-badge" 
-            data-locale="en_US" 
-            data-size="medium" 
-            data-theme="dark" 
-            data-type="HORIZONTAL" 
-            data-vanity="jack-long-953201157" 
-            data-version="v1">
-              <a class="badge-base__link LI-simple-link" 
-              href="https://www.linkedin.com/in/jack-long-953201157?trk=profile-badge">
-              </a>
-          </div>
-              
-          {/* <InputField
-            fullWidth={true}
-            label="Name"
-            variant="outlined"
-            inputProps={{ className: classes.input }}
-          />
-          <InputField
-            fullWidth={true}
-            label="Email"
-            variant="outlined"
-            inputProps={{ className: classes.input }}
-            className={classes.field}
-          />
-          <InputField
-            fullWidth={true}
-            label="Message"
-            variant="outlined"
-            multiline
-            rows={4}
-            inputProps={{ className: classes.input }}
-          />
-          <Button
-            variant="outlined"
-            fullWidth={true}
-            endIcon={<Send />}
-            className={classes.button}
-          >
-            Contact Me
-          </Button> */}
-        </Box>
-      </Grid>
+      <div className={classes.form}>
+        <Typography variant="h5" className={classes.heading}>
+          Contact
+        </Typography>
+        <Grid container justify="center" spacing={8}>
+            <div class="badge-base LI-profile-badge" 
+              data-locale="en_US" 
+              data-size="medium" 
+              data-theme="dark" 
+              data-type="HORIZONTAL" 
+              data-vanity="jack-long-953201157" 
+              data-version="v1">
+                <a class="badge-base__link LI-simple-link" 
+                href="https://www.linkedin.com/in/jack-long-953201157?trk=profile-badge">
+                </a>
+            </div>
+            <Grid item>            
+              <Link className={classes.root} rel="noreferrer" href="https://www.linkedin.com/in/jack-long-953201157" target="_blank"> 
+                <LinkedIn fontSize="large"></LinkedIn>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link className={classes.root} rel="noreferrer" href="https://github.com/Jack-R-Long" target="_blank"> 
+                <GitHub fontSize="large"></GitHub>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link className={classes.root} rel="noreferrer" href="https://twitter.com/Lets_Go_Moon" target="_blank"> 
+                <Twitter fontSize="large"></Twitter>
+              </Link>
+            </Grid>
+        </Grid>
+      </div>
     </Box>
   );
 };
