@@ -132,7 +132,7 @@ const Resume = () => {
             Solana Blockchain Developer
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            Mile High Ape Club - Discord
+            Mile High Ape Club 
           </Typography>
           <Typography
             variant="subtitle1"
