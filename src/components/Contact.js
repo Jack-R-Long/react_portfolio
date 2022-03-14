@@ -68,9 +68,21 @@ const Contact = () => {
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
           <Typography variant="h5" className={classes.heading}>
-            Hire or Contact me...
+            Contact
           </Typography>
-          <InputField
+          <div class="badge-base LI-profile-badge" 
+            data-locale="en_US" 
+            data-size="medium" 
+            data-theme="dark" 
+            data-type="HORIZONTAL" 
+            data-vanity="jack-long-953201157" 
+            data-version="v1">
+              <a class="badge-base__link LI-simple-link" 
+              href="https://www.linkedin.com/in/jack-long-953201157?trk=profile-badge">
+              </a>
+          </div>
+              
+          {/* <InputField
             fullWidth={true}
             label="Name"
             variant="outlined"
@@ -98,7 +110,7 @@ const Contact = () => {
             className={classes.button}
           >
             Contact Me
-          </Button>
+          </Button> */}
         </Box>
       </Grid>
     </Box>

@@ -9,17 +9,18 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Particles from "./Particles";
 
-import project1 from "../images/ape.png";
-import project2 from "../images/html-css-javascript.jpg";
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import MileHighApeClub from "../images/ape.png";
+import NFT from "../images/nft_gallery.png";
+import Inception from "../images/inception.png";
+import Smart from "../images/smart_home.png";
+import subnetting from "../images/subnetting.png";
+import CSVtoXML from "../images/f22.jpg";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#080837",
     height: "100%",
   },
   cardContainer: {
@@ -32,9 +33,18 @@ const projects = [
   {
     name: "Mile High Ape Club",
     description: `Solana NFT collection. Generated 6,200 NFTs that now have a \
-    floor of 3.2 sol.  Developed a Mile High Ape Club raffle and staking DApps.\
+    floor of 3.2 sol.  Co-developed Mile High Ape Club raffle and staking DApps.\
     Backend contracts written in Rust using the Anchor framework.`,
-    image: project1,
+    image: MileHighApeClub,
+    link: "https://www.milehighapeclub.com/"
+  },
+  {
+    name: "Smart Caregiver",
+    description: `Enterprise size e-commerce and marketing website. \
+    Updated the site to handle HTTPS traffic, migrated to a modern cloud-hosted \
+    server, and built SEO tracking tools with Google Analytics.`,
+    image: Smart,
+    link: "https://smartcaregiver.com/"
   },
   {
     name: "NFT Grab",
@@ -42,69 +52,69 @@ const projects = [
     wallet adapter.  Integrates with Phantom, Torus, Ledger etc.  Solana API  \
     and Axios to query and list NFTs from the blockchain.  Built on Create-\
     React-App Typescript template.`,
-    image: project2,
+    image: NFT,
+    link: "https://main.d3bzs39rqq2blz.amplifyapp.com/"
+  },
+  {
+    name: "CSV to XML",
+    description: `Conversion tool for comma separated value (CSV) data to \
+    extensible markup language (XML).  Built as a proof of concept for the \
+    Air Education Training Command Tech Roadshow.  The project was aimed at \
+    streamlining the way Air Force class data is handled. `,
+    image: CSVtoXML,
+    link: "https://main.d257eii0g86dl5.amplifyapp.com/"
+  },
+  {
+    name: "Learn Subnetting",
+    description: `Education tool to teach subnetting.  Built with Django,  \
+    this Python app generates semi-random subnetting quiz questions.  Side project \
+    I created to help students in my IT class.  Currently deployed with AWS \
+    Amplify.`,
+    image: subnetting,
+    link: "https://main.d1dpcbcaxnxk9a.amplifyapp.com/"
   },
   {
     name: "Evo NFT Launch Pad",
-    description: `In the works`,
-    image: project3,
-  },
-  {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project4,
-  },
-  {
-    name: "Project 5",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project5,
-  },
-  {
-    name: "Project 6",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project6,
+    description: `In the works.`,
+    image: Inception,
+    link: "https://github.com/Jack-R-Long"
   },
 ];
 
 const Portfolio = () => {
   const classes = useStyles();
   return (
-    <Box component="div" className={classes.mainContainer}>
-      <Grid container justify="center">
-        {/* Projects */}
-        {projects.map((project, i) => (
-          <Grid item xs={12} sm={8} md={4} key={i}>
-            <Card className={classes.cardContainer}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Project 1"
-                  height="140"
-                  image={project.image}
-                />
-                <CardContent>
-                  <Typography variant="h5" gutterBottom>
-                    {project.name}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {project.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+    <React.Fragment>
+      <Particles/>
+      <Box component="div" className={classes.mainContainer}>
+        <Grid container justify="center">
+          {/* Projects */}
+          {projects.map((project, i) => (
+            <Grid item xs={12} sm={8} md={4} key={i}>
+              <Card className={classes.cardContainer}>
+                <CardActionArea href={project.link}>
+                  <CardMedia
+                    component="img"
+                    alt="Project 1"
+                    height="140"
+                    image={project.image}
+                  />
+                  <CardContent>
+                    <Typography variant="h5" gutterBottom>
+                      {project.name}
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      {project.description}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+
+    </React.Fragment>
   );
 };
 

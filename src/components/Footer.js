@@ -2,9 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import Facebook from "@material-ui/icons/Facebook";
-import Twitter from "@material-ui/icons/Twitter";
-import Instagram from "@material-ui/icons/Instagram";
+import { Link } from "@material-ui/core";
+import { GitHub, Twitter, LinkedIn } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   bottomNavContainer: {
@@ -26,9 +25,15 @@ const Footer = () => {
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction icon={<Facebook />} className={classes.root} />
-      <BottomNavigationAction icon={<Twitter />} className={classes.root} />
-      <BottomNavigationAction icon={<Instagram />} className={classes.root} />
+      <Link href="https://www.linkedin.com/in/jack-long-953201157" target="_blank"> 
+        <BottomNavigationAction icon={<LinkedIn />} className={classes.root} />
+      </Link>
+      <Link href="https://github.com/Jack-R-Long" target="_blank"> 
+        <BottomNavigationAction icon={<GitHub />} className={classes.root} />
+      </Link>
+      <Link href="https://twitter.com/Lets_Go_Moon" target="_blank"> 
+        <BottomNavigationAction icon={<Twitter />} className={classes.root} />
+      </Link>
     </BottomNavigation>
   );
 };
