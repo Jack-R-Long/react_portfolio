@@ -94,7 +94,7 @@ const Navbar = () => {
               <MenuIcon className={classes.arrow} />
             </IconButton>
             <Typography variant="h5" className={classes.title}>
-              Portfolio
+              Jack Attack
             </Typography>
           </Toolbar>
         </AppBar>
