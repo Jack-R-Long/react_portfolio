@@ -80,17 +80,6 @@ const Contact = () => {
           Contact
         </Typography>
         <Grid container justify="center" spacing={8}>
-            <div class="badge-base LI-profile-badge" 
-              data-locale="en_US" 
-              data-size="medium" 
-              data-theme="dark" 
-              data-type="HORIZONTAL" 
-              data-vanity="jack-long-953201157" 
-              data-version="v1">
-                <a class="badge-base__link LI-simple-link" 
-                href="https://www.linkedin.com/in/jack-long-953201157?trk=profile-badge">
-                </a>
-            </div>
             <Grid item>            
               <Link className={classes.root} rel="noreferrer" href="https://www.linkedin.com/in/jack-long-953201157" target="_blank"> 
                 <LinkedIn fontSize="large"></LinkedIn>
